@@ -63,7 +63,13 @@ export function VideoSlot({
       />
       <div className="scan-line absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-transparent via-electric/15 to-transparent" />
 
-      <div className="relative z-10 px-6 text-center">
+      <div
+        className={
+          asBackground
+            ? "absolute bottom-10 left-6 z-10 text-left sm:left-10"
+            : "relative z-10 px-6 text-center"
+        }
+      >
         <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full border border-electric/50 transition-transform duration-500 group-hover:scale-110">
           <span className="ml-1 block h-0 w-0 border-y-[9px] border-l-[14px] border-y-transparent border-l-electric" />
         </div>
