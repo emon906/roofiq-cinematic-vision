@@ -70,7 +70,9 @@ export function VideoSlot({
             : "relative z-10 px-6 text-center"
         }
       >
-        <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full border border-electric/50 transition-transform duration-500 group-hover:scale-110">
+        <div
+          className={`mb-5 flex h-14 w-14 items-center justify-center rounded-full border border-electric/50 transition-transform duration-500 group-hover:scale-110 ${asBackground ? "" : "mx-auto"}`}
+        >
           <span className="ml-1 block h-0 w-0 border-y-[9px] border-l-[14px] border-y-transparent border-l-electric" />
         </div>
         <p className="eyebrow">Video area</p>
