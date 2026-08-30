@@ -22,7 +22,8 @@ const REVIEWS = [
 
 export function Reviews() {
   const [i, setI] = useState(0);
-  const r = REVIEWS[i];
+  const r = REVIEWS[i] ?? REVIEWS[0]!;
+
 
   return (
     <section id="reviews" className="relative overflow-hidden surface-navy py-28 lg:py-40">
